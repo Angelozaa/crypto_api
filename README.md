@@ -2,8 +2,8 @@
 
 COMO RODAR(navegador):
 
-cd coin-proxy
-node index.js
+- cd coin-proxy
+- node index.js
 
-cd ../
-flutter run -d chrome
+- cd ../
+- flutter run -d chrome
