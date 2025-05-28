@@ -7,3 +7,6 @@ COMO RODAR(navegador):
 
 - cd ../
 - flutter run -d chrome
+
+
+- o node é necessário pois o CORS não permite requisições direto do navegador para a api do  coimarketcap
