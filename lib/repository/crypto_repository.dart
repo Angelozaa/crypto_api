@@ -7,7 +7,7 @@ class CryptoRepository {
   CryptoRepository(this.api);
 
   Future<List<CryptoModel>> getCryptos(String symbols) async {
-    final data = await api.fetchCryptos(symbols);
-    return data.values.map((item) => CryptoModel.fromJson(item)).toList();
+    final list = await api.fetchCryptos(symbols);
+    return list.map((item) => CryptoModel.fromJson(item)).toList();
   }
 }

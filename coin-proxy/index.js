@@ -9,7 +9,7 @@ app.use(cors());
 app.get('/quotes', async (req, res) => {
   try {
     const symbols = req.query.symbols || 'BTC,ETH';
-    const url = `https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=${symbols}`;
+    const url = `https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=${symbols}`;
 
     console.log('URL chamada:', url);
 
