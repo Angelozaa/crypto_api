@@ -1,6 +1,6 @@
 # crypto_api
 
-COMO RODAR(navegador):
+COMO RODAR NO VSCODE(navegador):
 
 - cd coin-proxy
 - node index.js
