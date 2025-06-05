@@ -1,13 +1,7 @@
 # crypto_api
 
-COMO RODAR NO VSCODE(navegador):
+COMO RODAR NO VSCODE:
 
-- cd coin-proxy
-- node index.js
+- flutter pub get
 
-- Terminal
-- New Terminal
-- flutter run -d chrome
-- (ou seu navegador de preferencia)
-
-- o node é necessário pois o CORS não permite requisições direto do navegador para a api do  coimarketcap
+- rodar no celeular
