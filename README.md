@@ -4,4 +4,4 @@ COMO RODAR NO VSCODE:
 
 - flutter pub get
 
-- rodar no celeular
+- rodar no celeular com internet
