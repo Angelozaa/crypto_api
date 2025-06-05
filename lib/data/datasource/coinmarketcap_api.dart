@@ -2,12 +2,13 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class CoinMarketCapApi {
-  final String _baseUrl = 'http://localhost:3000/quotes';
+  final String _baseUrl = 'https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest';
 
     Future<List<Map<String, dynamic>>> fetchCryptos(String symbols) async {
-      final uri = Uri.parse('$_baseUrl?symbols=$symbols');
+      final uri = Uri.parse('$_baseUrl?symbol=$symbols');
       final response = await http.get(uri, headers: {
-        "Accept": "application/json",
+        'X-CMC_PRO_API_KEY': '6e67b604-4ebc-488a-a177-858a986717eb',
+        'Accept': 'application/json',
       });
 
       final json = jsonDecode(response.body);
